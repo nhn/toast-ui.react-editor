@@ -73,7 +73,7 @@ const Editor = require('@toast-ui/react-editor');
 
 ### Props
 
-[All the options of the TOAST UI Editor](https://nhnent.github.io/tui.editor/api/latest/ToastUIEditor.html#ToastUIEditor) are supported in the form of props.
+[All the options of the TOAST UI Editor](https://nhn.github.io/tui.editor/api/latest/ToastUIEditor.html#ToastUIEditor) are supported in the form of props.
 
 ```js
 const MyComponent = () => (
@@ -103,7 +103,7 @@ const MyComponent = () => (
 
 ### Instance Methods
 
-For using [instance methods of TOAST UI Editor](https://nhnent.github.io/tui.editor/api/latest/ToastUIEditor.html#.defineExtension), first thing to do is creating Refs of wrapper component using [`createRef()`](https://reactjs.org/docs/refs-and-the-dom.html#creating-refs). But the wrapper component does not provide a way to call instance methods of TOAST UI Editor directly. Instead, you can call `getInstance()` method of the wrapper component to get the instance, and call the methods on it.
+For using [instance methods of TOAST UI Editor](https://nhn.github.io/tui.editor/api/latest/ToastUIEditor.html#.defineExtension), first thing to do is creating Refs of wrapper component using [`createRef()`](https://reactjs.org/docs/refs-and-the-dom.html#creating-refs). But the wrapper component does not provide a way to call instance methods of TOAST UI Editor directly. Instead, you can call `getInstance()` method of the wrapper component to get the instance, and call the methods on it.
 
 ```js
 class MyComponent extends React.Component {
@@ -160,11 +160,11 @@ class MyComponent extends React.Component {
 ```
 
 ### Events
-[All the events of TOAST UI Editor](https://nhnent.github.io/tui.editor/api/latest/ToastUIEditor.html#focus) are supported in the form of `on[EventName]` props. The first letter of each event name should be capitalized. For example, for using `focus` event you can use `onFocus` prop like the example below.
+[All the events of TOAST UI Editor](https://nhn.github.io/tui.editor/api/latest/ToastUIEditor.html#focus) are supported in the form of `on[EventName]` props. The first letter of each event name should be capitalized. For example, for using `focus` event you can use `onFocus` prop like the example below.
 
 ```js
 class MyComponent extends React.Component {
-  handleFoucs = () => {
+  handleFocus = () => {
     console.log('focus!!');
   }
 
